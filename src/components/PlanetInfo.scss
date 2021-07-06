@@ -1,0 +1,52 @@
+.planet-info {
+  // General Styles
+
+  // Small Screens
+  @media screen and (max-width: 600px) {
+  }
+
+  // Medium Screens
+  @media screen and (min-width: 600px) {
+  }
+
+  // Large Screens
+  @media screen and (min-width: 768px) {
+    padding-top: 2rem;
+  }
+}
+
+.info-text {
+  // General Styles
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  .planet-description {
+    line-height: 2;
+  }
+
+  .planet-source {
+    padding: 2rem 0;
+  }
+
+  // Small Screens
+  @media screen and (max-width: 600px) {
+  }
+
+  // Medium Screens
+  @media screen and (min-width: 600px) {
+  }
+
+  // Large Screens
+  @media screen and (min-width: 768px) {
+    width: 95%;
+
+    h1 {
+      font-size: 5rem;
+      padding: 1rem 0;
+    }
+  }
+}
