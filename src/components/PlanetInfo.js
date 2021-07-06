@@ -6,6 +6,7 @@ const PlanetInfo = (props) => {
   const planet = props.planet;
   const setContent = props.setContent;
   const content = props.content;
+  const setImage = props.setImage;
   return (
     <div className="planet-info">
       <div className="info-text">
@@ -20,7 +21,11 @@ const PlanetInfo = (props) => {
           </a>
         </div>
       </div>
-      <InfoSelector planet={planet} setContent={setContent} />
+      <InfoSelector
+        planet={planet}
+        setContent={setContent}
+        setImage={setImage}
+      />
     </div>
   );
 };

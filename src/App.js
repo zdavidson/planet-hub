@@ -34,6 +34,7 @@ const App = () => {
         <Hero
           planet={planet}
           setContent={setContent}
+          setImage={setImage}
           content={content}
           image={image}
         />

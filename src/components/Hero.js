@@ -7,10 +7,16 @@ const Hero = (props) => {
   const setContent = props.setContent;
   const content = props.content;
   const image = props.image;
+  const setImage = props.setImage;
   return (
     <div className="hero">
       <PlanetImage planet={planet} image={image} />
-      <PlanetInfo planet={planet} setContent={setContent} content={content} />
+      <PlanetInfo
+        planet={planet}
+        setContent={setContent}
+        content={content}
+        setImage={setImage}
+      />
     </div>
   );
 };
