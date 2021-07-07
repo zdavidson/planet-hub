@@ -3,7 +3,14 @@ import Nav from "react-bootstrap/Nav";
 import "./Navigation.scss";
 import data from "../data.json";
 
-const Navigation = ({ setPlanet, setContent, setImage, setGeoImage }) => {
+const Navigation = ({
+  setPlanet,
+  setContent,
+  setImage,
+  setGeoImage,
+  setIsOpen,
+  isOpen,
+}) => {
   return (
     <div className="navigation">
       <NavBar>
@@ -29,7 +36,7 @@ const Navigation = ({ setPlanet, setContent, setImage, setGeoImage }) => {
             );
           })}
         </Nav>
-        <span id="hamburger-icon"></span>
+        <span id="hamburger-icon" onClick={() => setIsOpen(!isOpen)}></span>
       </NavBar>
     </div>
   );

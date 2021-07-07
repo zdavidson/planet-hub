@@ -35,8 +35,12 @@
 
   padding: 1rem;
 
-  span {
+  .num {
     padding-right: 1rem;
+  }
+
+  .extra-text {
+    padding-right: 0.25rem;
   }
 
   &:hover {

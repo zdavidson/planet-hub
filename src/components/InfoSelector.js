@@ -11,7 +11,7 @@ const InfoSelector = ({ planet, setContent, setImage, setGeoImage }) => {
           setGeoImage(false);
         }}
       >
-        <span>01</span> Overview
+        <span className="num">01</span>Overview
       </button>
 
       <button
@@ -22,7 +22,8 @@ const InfoSelector = ({ planet, setContent, setImage, setGeoImage }) => {
           setGeoImage(false);
         }}
       >
-        <span>02</span>Internal Structure
+        <span className="num">02</span>
+        <span className="extra-text">Internal </span> Structure
       </button>
 
       <button
@@ -33,7 +34,8 @@ const InfoSelector = ({ planet, setContent, setImage, setGeoImage }) => {
           setGeoImage(true);
         }}
       >
-        <span>03</span>Surface Geology
+        <span className="num">03</span>
+        <span className="extra-text">Surface </span> Geology
       </button>
     </div>
   );

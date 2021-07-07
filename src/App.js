@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
 import PlanetStatistics from "./components/PlanetStatistics";
+import MobileMenu from "./components/MobileMenu";
 import data from "./data.json";
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
   const [content, setContent] = useState("");
   const [image, setImage] = useState("");
   const [geoImage, setGeoImage] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     setPlanet(data[0]);
@@ -26,11 +28,14 @@ const App = () => {
 
   return (
     <div id="App">
+      {isOpen ? <MobileMenu /> : <div></div>}
       <Navigation
         setPlanet={setPlanet}
         setContent={setContent}
         setImage={setImage}
         setGeoImage={setGeoImage}
+        setIsOpen={setIsOpen}
+        isOpen={isOpen}
       />
       <Container>
         <Hero

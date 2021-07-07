@@ -1,0 +1,22 @@
+.mobile-menu {
+  // General Styles
+
+  // Small Screens
+  @media screen and (max-width: 600px) {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    transform: translateX(50%);
+    transition-timing-function: ease-in;
+    transition: 200ms;
+  }
+
+  // Medium Screens
+  @media screen and (min-width: 600px) {
+  }
+
+  // Large Screens
+  @media screen and (min-width: 768px) {
+  }
+}
