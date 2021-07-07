@@ -43,6 +43,10 @@
     background-color: #419ebb;
   }
 
+  &:focus {
+    background-color: #419ebb;
+  }
+
   // Small Screens
   @media screen and (max-width: 600px) {
     border: none;

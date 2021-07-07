@@ -1,7 +1,6 @@
 import "./PlanetStatistics.scss";
 
-const PlanetStatistics = (props) => {
-  const planet = props.planet;
+const PlanetStatistics = ({ planet }) => {
   return (
     <div className="planet-statistics">
       <div className="planet-stat">

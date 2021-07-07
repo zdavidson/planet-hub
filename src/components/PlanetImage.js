@@ -1,9 +1,6 @@
 import "./PlanetImage.scss";
 
-const PlanetImage = (props) => {
-  const image = props.image;
-  const geoImage = props.geoImage;
-
+const PlanetImage = ({ image, geoImage }) => {
   return (
     <div className="planet-img">
       <img id="planet-pic" src={image} alt="planet" />

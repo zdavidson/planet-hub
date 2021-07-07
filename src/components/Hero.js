@@ -2,20 +2,24 @@ import "./Hero.scss";
 import PlanetImage from "./PlanetImage";
 import PlanetInfo from "./PlanetInfo";
 
-const Hero = (props) => {
+const Hero = ({
+  planet,
+  image,
+  geoImage,
+  setContent,
+  content,
+  setImage,
+  setGeoImage,
+}) => {
   return (
     <div className="hero">
-      <PlanetImage
-        planet={props.planet}
-        image={props.image}
-        geoImage={props.geoImage}
-      />
+      <PlanetImage planet={planet} image={image} geoImage={geoImage} />
       <PlanetInfo
-        planet={props.planet}
-        setContent={props.setContent}
-        content={props.content}
-        setImage={props.setImage}
-        setGeoImage={props.setGeoImage}
+        planet={planet}
+        setContent={setContent}
+        content={content}
+        setImage={setImage}
+        setGeoImage={setGeoImage}
       />
     </div>
   );

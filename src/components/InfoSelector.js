@@ -1,11 +1,6 @@
 import "./InfoSelector.scss";
 
-const InfoSelector = (props) => {
-  const planet = props.planet;
-  const setContent = props.setContent;
-  const setImage = props.setImage;
-  const setGeoImage = props.setGeoImage;
-
+const InfoSelector = ({ planet, setContent, setImage, setGeoImage }) => {
   return (
     <div className="info-selector">
       <button

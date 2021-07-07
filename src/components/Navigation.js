@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import "./Navigation.scss";
 import data from "../data.json";
 
-const Navigation = (props) => {
+const Navigation = ({ setPlanet, setContent, setImage, setGeoImage }) => {
   return (
     <div className="navigation">
       <NavBar>
@@ -18,10 +18,10 @@ const Navigation = (props) => {
                 className="navigation-link"
                 href="#"
                 onClick={() => {
-                  props.setPlanet(planet);
-                  props.setContent(planet.overview.content);
-                  props.setImage(planet.images.planet);
-                  props.setGeoImage(false);
+                  setPlanet(planet);
+                  setContent(planet.overview.content);
+                  setImage(planet.images.planet);
+                  setGeoImage(false);
                 }}
               >
                 {planet.name}
