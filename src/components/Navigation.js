@@ -29,6 +29,7 @@ const Navigation = (props) => {
             );
           })}
         </Nav>
+        <span id="hamburger-icon"></span>
       </NavBar>
     </div>
   );

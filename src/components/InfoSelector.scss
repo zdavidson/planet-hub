@@ -4,6 +4,9 @@
 
   // Small Screens
   @media screen and (max-width: 600px) {
+    border-top: 1px solid rgba(255, 255, 255, 0.26);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+    margin: 2rem 0;
   }
 
   // Medium Screens
@@ -42,6 +45,17 @@
 
   // Small Screens
   @media screen and (max-width: 600px) {
+    border: none;
+    text-align: center;
+    padding: 1rem 0.25rem;
+    margin-bottom: 2rem;
+    align-self: center;
+
+    margin-top: 2rem;
+
+    span {
+      display: none;
+    }
   }
 
   // Medium Screens

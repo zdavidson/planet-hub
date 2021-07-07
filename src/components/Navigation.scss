@@ -17,6 +17,16 @@
 
   // Small Screens
   @media screen and (max-width: 600px) {
+    .nav-links {
+      display: none;
+    }
+
+    #hamburger-icon {
+      background-image: url("../icon-hamburger.svg");
+      height: 1rem;
+      width: 3rem;
+      margin-left: auto;
+    }
   }
 
   // Medium Screens

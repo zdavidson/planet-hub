@@ -1,6 +1,7 @@
 .planet-info {
   // General Styles
-
+  display: flex;
+  flex-direction: column;
   // Small Screens
   @media screen and (max-width: 600px) {
   }
@@ -29,8 +30,32 @@
     line-height: 2;
   }
 
+  .planet-source,
+  .planet-source a {
+    color: rgba(255, 255, 255, 0.26);
+  }
+
+  .planet-source a {
+    text-decoration: underline;
+  }
+
   // Small Screens
   @media screen and (max-width: 600px) {
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+      padding: 1rem 0;
+    }
+
+    .planet-description {
+      line-height: 1.75;
+    }
+
+    .planet-description,
+    .planet-source {
+      font-size: 0.8rem;
+    }
   }
 
   // Medium Screens

@@ -5,6 +5,7 @@ const InfoSelector = (props) => {
   const setContent = props.setContent;
   const setImage = props.setImage;
   const setGeoImage = props.setGeoImage;
+
   return (
     <div className="info-selector">
       <button
