@@ -14,8 +14,13 @@
     padding: 15% 12.5%;
     width: 100%;
 
-    img {
+    #planet-pic {
       width: 100%;
+    }
+
+    #geo-pic {
+      width: 50%;
+      transform: translate(50%, -50%);
     }
   }
 }

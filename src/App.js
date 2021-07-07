@@ -17,6 +17,7 @@ const App = () => {
   });
   const [content, setContent] = useState("");
   const [image, setImage] = useState("");
+  const [geoImg, toggleGeoImg] = useState(false);
 
   useEffect(() => {
     setPlanet(data[0]);
@@ -37,6 +38,8 @@ const App = () => {
           setImage={setImage}
           content={content}
           image={image}
+          geoImg={geoImg}
+          toggleGeoImg={toggleGeoImg}
         />
         <PlanetStatistics planet={planet} />
       </Container>
