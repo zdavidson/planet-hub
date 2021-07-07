@@ -11,7 +11,7 @@ const PlanetImage = (props) => {
       {geoImage ? (
         <img id="geo-pic" src="./assets/geology-mercury.png" alt="geo-img" />
       ) : (
-        <div>empty div</div>
+        <div></div>
       )}
     </div>
   );

@@ -21,6 +21,7 @@ const Navigation = (props) => {
                   props.setPlanet(planet);
                   props.setContent(planet.overview.content);
                   props.setImage(planet.images.planet);
+                  props.setGeoImage(false);
                 }}
               >
                 {planet.name}

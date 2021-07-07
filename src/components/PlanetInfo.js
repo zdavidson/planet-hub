@@ -7,7 +7,7 @@ const PlanetInfo = (props) => {
   const setContent = props.setContent;
   const content = props.content;
   const setImage = props.setImage;
-  const toggleGeoImg = props.toggleGeoImg;
+  const setGeoImage = props.setGeoImage;
   return (
     <div className="planet-info">
       <div className="info-text">
@@ -26,7 +26,7 @@ const PlanetInfo = (props) => {
         planet={planet}
         setContent={setContent}
         setImage={setImage}
-        toggleGeoImg={toggleGeoImg}
+        setGeoImage={setGeoImage}
       />
     </div>
   );

@@ -17,7 +17,7 @@ const App = () => {
   });
   const [content, setContent] = useState("");
   const [image, setImage] = useState("");
-  const [geoImg, toggleGeoImg] = useState(false);
+  const [geoImage, setGeoImage] = useState(false);
 
   useEffect(() => {
     setPlanet(data[0]);
@@ -30,6 +30,7 @@ const App = () => {
         setPlanet={setPlanet}
         setContent={setContent}
         setImage={setImage}
+        setGeoImage={setGeoImage}
       />
       <Container>
         <Hero
@@ -38,8 +39,8 @@ const App = () => {
           setImage={setImage}
           content={content}
           image={image}
-          geoImg={geoImg}
-          toggleGeoImg={toggleGeoImg}
+          geoImage={geoImage}
+          setGeoImage={setGeoImage}
         />
         <PlanetStatistics planet={planet} />
       </Container>

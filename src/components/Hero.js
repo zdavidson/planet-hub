@@ -8,18 +8,18 @@ const Hero = (props) => {
   const content = props.content;
   const image = props.image;
   const setImage = props.setImage;
-  const geoImg = props.geoImg;
-  const toggleGeoImg = props.toggleGeoImg;
+  const geoImage = props.geoImage;
+  const setGeoImage = props.setGeoImage;
 
   return (
     <div className="hero">
-      <PlanetImage planet={planet} image={image} geoImg={geoImg} />
+      <PlanetImage planet={planet} image={image} geoImage={geoImage} />
       <PlanetInfo
         planet={planet}
         setContent={setContent}
         content={content}
         setImage={setImage}
-        toggleGeoImg={toggleGeoImg}
+        setGeoImage={setGeoImage}
       />
     </div>
   );

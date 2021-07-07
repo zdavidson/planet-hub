@@ -4,7 +4,7 @@ const InfoSelector = (props) => {
   const planet = props.planet;
   const setContent = props.setContent;
   const setImage = props.setImage;
-  const toggleGeoImg = props.toggleGeoImg;
+  const setGeoImage = props.setGeoImage;
   return (
     <div className="info-selector">
       <button
@@ -12,6 +12,7 @@ const InfoSelector = (props) => {
         onClick={() => {
           setContent(planet.overview.content);
           setImage(planet.images.planet);
+          setGeoImage(false);
         }}
       >
         <span>01</span> Overview
@@ -22,6 +23,7 @@ const InfoSelector = (props) => {
         onClick={() => {
           setContent(planet.structure.content);
           setImage(planet.images.internal);
+          setGeoImage(false);
         }}
       >
         <span>02</span>Internal Structure
@@ -31,7 +33,7 @@ const InfoSelector = (props) => {
         className="selector"
         onClick={() => {
           setContent(planet.geology.content);
-          toggleGeoImg(true);
+          setGeoImage(true);
         }}
       >
         <span>03</span>Surface Geology
