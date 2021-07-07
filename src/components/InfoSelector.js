@@ -33,6 +33,7 @@ const InfoSelector = (props) => {
         className="selector"
         onClick={() => {
           setContent(planet.geology.content);
+          setImage(planet.images.planet);
           setGeoImage(true);
         }}
       >
