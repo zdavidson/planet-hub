@@ -47,7 +47,7 @@ const App = () => {
         setIsOpen={setIsOpen}
         isOpen={isOpen}
       />
-      <Container>
+      <Container fluid="md">
         <Hero
           planet={planet}
           setContent={setContent}
