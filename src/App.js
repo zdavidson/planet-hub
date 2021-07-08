@@ -28,7 +28,17 @@ const App = () => {
 
   return (
     <div id="App">
-      {isOpen ? <MobileMenu /> : <div></div>}
+      {isOpen ? (
+        <MobileMenu
+          setPlanet={setPlanet}
+          setContent={setContent}
+          setImage={setImage}
+          setGeoImage={setGeoImage}
+          setIsOpen={setIsOpen}
+        />
+      ) : (
+        <div></div>
+      )}
       <Navigation
         setPlanet={setPlanet}
         setContent={setContent}
