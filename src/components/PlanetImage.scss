@@ -32,6 +32,18 @@
 
   // Medium Screens
   @media screen and (min-width: 600px) and (max-width: 960px) {
+    padding: 25%;
+    padding-right: 0;
+
+    #planet-pic {
+      width: 60%;
+    }
+
+    #geo-pic {
+      width: 30%;
+      transform: translate(-150%, 90%);
+      padding: 0;
+    }
   }
 
   // Large Screens
