@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "./App.scss";
 import Container from "react-bootstrap/Container";
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
