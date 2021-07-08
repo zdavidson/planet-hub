@@ -60,6 +60,19 @@
 
   // Medium Screens
   @media screen and (min-width: 600px) and (max-width: 960px) {
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+      padding: 1rem 0;
+    }
+    .planet-description {
+      line-height: 1.75;
+    }
+
+    .planet-source {
+      padding-bottom: 1rem;
+    }
   }
 
   // Large Screens
