@@ -2,7 +2,7 @@
 
 ## Description
 
-Checkout all of the planets (R.I.P. Pluto) and some cool facts about each one.
+Checkout all of the planets and some cool facts about each one, [here](http://planet-hub.vercel.app/).
 
 ## Tech
 
